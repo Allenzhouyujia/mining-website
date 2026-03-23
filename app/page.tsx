@@ -383,6 +383,11 @@ const T = {
       },
     ],
   },
+  video: {
+    tag: { en: "Project Introduction", zh: "项目介绍" },
+    title: { en: "3-Minute Strategic Deep Dive", zh: "3分钟战略深度解析" },
+    desc: { en: "A concise overview of the OHPIKIW Potash Project — strategy, resources, and investment highlights.", zh: "OHPIKIW钾盐项目简明概览——战略布局、资源禀赋与投资亮点。" },
+  },
   avatar: {
     tag: { en: "AI Digital Assistant", zh: "AI 数字助理" },
     title: { en: "AI Assistant", zh: "数字助理" },
@@ -524,6 +529,26 @@ export default function Home() {
             <a href="#section-6" className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-colors border border-white/20">
               {t(T.hero.cta2, lang)}
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Video Introduction ── */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-amber-400 text-sm font-medium uppercase tracking-widest">{t(T.video.tag, lang)}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">{t(T.video.title, lang)}</h2>
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">{t(T.video.desc, lang)}</p>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-gray-800 bg-black shadow-2xl">
+            <video
+              controls
+              className="w-full aspect-video"
+              preload="metadata"
+            >
+              <source src="/ohpikiw-intro.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
