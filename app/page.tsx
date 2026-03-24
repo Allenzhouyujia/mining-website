@@ -542,13 +542,13 @@ export default function Home() {
             <p className="text-gray-400 mt-4 max-w-2xl mx-auto">{t(T.video.desc, lang)}</p>
           </div>
           <div className="rounded-2xl overflow-hidden border border-gray-800 bg-black shadow-2xl">
-            <video
-              controls
+            <iframe
               className="w-full aspect-video"
-              preload="metadata"
-            >
-              <source src="/ohpikiw-intro.mp4" type="video/mp4" />
-            </video>
+              src="https://www.youtube.com/embed/_6NhwCVcguM"
+              title="OHPIKIW Potash Project - 3-Minute Strategic Deep Dive"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
